@@ -6,7 +6,7 @@ import { Button, CircularProgress, Container, Dialog, Typography } from '@mui/ma
 import { auth } from '../firebase/firebase';
 import styles from '../styles/landing.module.scss';
 import StyledFirebaseAuth  from 'react-firebaseui/StyledFirebaseAuth';
-import { Router } from 'react-router-dom';
+// import { Router } from 'react-router-dom';
 import { useAuth } from '../firebase/auth';
 
 const REDIRECT_PAGE = '/dashboard';
@@ -39,12 +39,12 @@ export default function Home() {
 
       <main>
         <Container className={styles.container}>
-          <Typography variant="h1">Welcome to Expense Tracker!</Typography>
-          <Typography variant="h2">Add, view, edit, and delete expenses</Typography>
+          <Typography variant="h1">Welcome to Amando's Expense Tracker!</Typography>
+          <Typography variant="h2">Add, view, edit, and delete expenses, Add whatever you want!</Typography>
           <div className={styles.buttons}>
             <Button variant="contained" color="secondary"
               onClick={() => setLogin(true)}>
-              Login / Register
+              Please Login / Register
             </Button>
           </div>
           <Dialog open={login} onClose={() => setLogin(false)}>
